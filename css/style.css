@@ -1,22 +1,255 @@
-#barra-superior {
-	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.7);
+*{
+	margin: 0;
 }
 
-#background {
+#primeiro-bloco {
 	z-index: 1;
 	width: 100%;
 	height: 1001px;
 	background-image: url("../images/banner.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+	#barra-superior {
+		z-index: 2;
+		height: 6%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
 
+	#barra-superior ul {
+		list-style: none;
+		float: right;
+		position: relative;
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+
+	#barra-superior ul li {
+		display: inline-block;
+		font-family: "Montserrat", sans-serif;
+		color: white;
+		padding: 2px 4px;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 18px;
+	}
+
+	#barra-superior ul li a{
+		text-decoration: none;
+		color: white;
+	}
+
+	#aprenda {
+		color: white;
+		font-size: 52px;
+		text-shadow: 3px 2px black;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+	}
+
+	#div-header {
+		text-align: center;
+		margin-top: 20%;
+	}
+
+	#div-header ul {
+		list-style: none;
+		position: relative;
+		margin: 10px;
+	}
+
+	#div-header ul li {
+		display: inline-block;
+		padding: 10px 40px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 25px;
+		text-shadow: 1px 1px black;
+		color: white;
+		border: solid;
+	}
+
+	#div-header ul li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	#logo-trainee {
+		padding: 20px 15px;
+	}
+
+#segundo-bloco {
+	background-color: white;
+	margin-top: 5%;
+	border-bottom: solid;
+	border-bottom-color: #DDE1E7;
+	padding-bottom: 7%;
 }
 
-#aprenda {
-	color: white;
-	font-size: 52px;
-	text-shadow: 3px, 2px, black;
-	font-family: "Montserrat", sans-senrif;
-	text-align: center;
+	#segundo-bloco h1 {
+		color: #F16557;
+		font-family: "Montserrat", sans-serif;
+		padding-bottom: 2%;
+		letter-spacing: 10px;
+	}
+
+	#segundo-bloco img {
+		float: left;
+		vertical-align: middle;
+	}
+
+	#segundo-bloco p {
+		font-size: 100%;
+		font-family: "Montserrat", sans-serif;
+		vertical-align: middle;
+	}
+
+#terceiro-bloco {
+	background-color: white;
+	border-bottom: solid;
+	border-bottom-color: #DDE1E7;]
+	padding-bottom: 7%;
 }
+	
+	#terceiro-bloco h1 {
+		font-family: "Montserrat", sans-serif;
+		color: #F16557;
+		text-align: center;
+		letter-spacing: 10px;
+		margin-top: 2%;
+	}
+
+	#blocasso {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100vw;
+		height: 90vh;
+		margin: 0 auto;
+	}
+
+		.bloquin {
+			border: solid;
+			border-color: #DDE1E7;
+			position: relative;
+			margin: 1%;
+			height: 80%;
+			width: 90%;
+		}
+
+			.fundo-bloquin {
+				width: 100%;
+				height: 70%;
+				border-bottom: solid;
+				border-bottom-color: #DDE1E7;
+			}
+
+		#primeiro-bloquin {
+			background-color: #D65B43;
+		}
+
+			#primeiro-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+	
+		#segundo-bloquin {
+			background-color: #D65B43; 
+		}
+
+			#segundo-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		#terceiro-bloquin {
+			background-color: #6CC5EB; 
+		}
+
+			#terceiro-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		#quarto-bloquin {
+			background-color: #F3CA4B; 
+		}
+
+			#quarto-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+#quarto-bloco {
+	background-color: white;
+}
+	
+	#quarto-bloco h1 {
+		font-family: "Montserrat", sans-serif;
+		color: #A72D3A;
+		text-align: center;
+		letter-spacing: 10px;
+		margin-top: 2%;
+	}
+
+	#quinto-bloquin {
+			background-color: #B21300; 
+		}
+
+			#quinto-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#sexto-bloquin {
+			background-color: #A72D3A; 
+		}
+
+			#sexto-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#setimo-bloquin {
+			background-color: #8A2BFF; 
+		}
+
+			#setimo-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	#oitavo-bloquin {
+			background-color: #A72D3A; 
+		}
+
+			#oitavo-bloquin img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	.VerMais {
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		border: solid;
+		background-color: black;
+		border-radius: 13%;
+		color: white;
+		margin-left: 42%;
+		margin-right: 42%;
+		margin-bottom: 0.5%;
+		padding: 0.5%;
+	}
+
+	.aVerMais {
+		text-decoration: none;
+		color: white;
+	}
