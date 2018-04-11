@@ -5,7 +5,7 @@
 #primeiro-bloco {
 	z-index: 1;
 	width: 100%;
-	height: 1001px;
+	height: 1000px;
 	background-image: url("../images/banner.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,16 +13,21 @@
 }
 	#barra-superior {
 		z-index: 2;
-		height: 6%;
+		height: 12%;
 		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#logo-trainee {
+		margin-top: 4%;
+		margin-left: 4%;
 	}
 
 	#barra-superior ul {
 		list-style: none;
 		float: right;
 		position: relative;
-		margin-right: 15px;
-		margin-top: 15px;
+		margin-right: 1%;
+		margin-top: 4%;
 	}
 
 	#barra-superior ul li {
@@ -74,9 +79,6 @@
 		color: white;
 	}
 
-	#logo-trainee {
-		padding: 20px 15px;
-	}
 
 #segundo-bloco {
 	background-color: white;
@@ -124,7 +126,7 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 100vw;
-		height: 90vh;
+		height: 80vh;
 		margin: 0 auto;
 	}
 
@@ -133,8 +135,62 @@
 			border-color: #DDE1E7;
 			position: relative;
 			margin: 1%;
-			height: 80%;
+			height: 70%;
 			width: 90%;
+		}
+
+		.texto-de-bloquin {
+			font-family: "Montserrat", sans-serif;
+			font-size: 80%;
+			text-align: center;
+			margin-top: 8%;
+		}
+
+		.botao-de-bloquin {
+			text-align: center;
+			font-family: "Montserrat", sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			border: solid;
+			background-color: #FF7F00;
+			border-radius: 13%;
+			color: white;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 5%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			letter-spacing: 1px;
+		}
+
+		.texto-de-bloquin2 {
+			font-family: "Montserrat", sans-serif;
+			font-size: 80%;
+			text-align: right;
+			margin-top: 8%;
+			margin-right: 5%;
+		}
+
+		.botao-de-bloquin2 {
+			text-align: center;
+			font-family: "Montserrat", sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			border: solid;
+			background-color: #A72D3A;
+			border-radius: 13%;
+			color: white;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 5%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			letter-spacing: 1px;
+		}
+
+		.aBotao-de-bloquin {
+			text-decoration: none;
+			color: white;
 		}
 
 			.fundo-bloquin {
@@ -144,45 +200,35 @@
 				border-bottom-color: #DDE1E7;
 			}
 
-		#primeiro-bloquin {
-			background-color: #D65B43;
-		}
+			.texto-de-fundo-bloquin {
+				float: left;
+				margin-left: 10%;
+				color: white;
+				font-family: "Montserrat", sans-serif;
+			}
 
-			#primeiro-bloquin img {
+			.img-de-fundo-bloquin {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				padding-top: 10%;
 			}
+
+		#primeiro-fundo-bloquin {
+			background-color: #D65B43;
+		}
 	
-		#segundo-bloquin {
+		#segundo-fundo-bloquin {
 			background-color: #D65B43; 
 		}
 
-			#segundo-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-		#terceiro-bloquin {
+		#terceiro-fundo-bloquin {
 			background-color: #6CC5EB; 
 		}
 
-			#terceiro-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-		#quarto-bloquin {
+		#quarto-fundo-bloquin {
 			background-color: #F3CA4B; 
 		}
-
-			#quarto-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
 
 #quarto-bloco {
 	background-color: white;
@@ -196,45 +242,21 @@
 		margin-top: 2%;
 	}
 
-	#quinto-bloquin {
+	#quinto-fundo-bloquin {
 			background-color: #B21300; 
 		}
 
-			#quinto-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-	#sexto-bloquin {
+	#sexto-fundo-bloquin {
 			background-color: #A72D3A; 
 		}
 
-			#sexto-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-	#setimo-bloquin {
+	#setimo-fundo-bloquin {
 			background-color: #8A2BFF; 
 		}
 
-			#setimo-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-	#oitavo-bloquin {
+	#oitavo-fundo-bloquin {
 			background-color: #A72D3A; 
 		}
-
-			#oitavo-bloquin img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
 
 	.VerMais {
 		text-align: center;
