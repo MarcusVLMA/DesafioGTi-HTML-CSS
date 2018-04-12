@@ -7,15 +7,26 @@
 	width: 100vw;
 	height: 90vw;
 	background-image: url("../images/banner.jpg");
-	/*background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: auto;
 	vertical-align: middle;
 }
+	
 	#barra-superior {
 		z-index: 2;
 		height: 7vw;
 		width: 100vw;
 		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	@media only screen and (max-width: 540px) {
+		#barra-superior {
+			z-index: 2;
+			height: 30vw;
+			width: 100vw;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
 	}
 
 		#barra-superior img {
@@ -110,7 +121,7 @@
 #terceiro-bloco {
 	background-color: white;
 	border-bottom: solid;
-	border-bottom-color: #DDE1E7;]
+	border-bottom-color: #DDE1E7;
 	padding-bottom: 7%;
 }
 	
@@ -129,6 +140,7 @@
 		width: 100vw;
 		height: 80vh;
 		margin: 0 auto;
+		overflow: scroll;
 	}
 
 		.bloquin {
@@ -138,6 +150,7 @@
 			margin: 1%;
 			height: 70%;
 			width: 90%;
+			overflow: scroll;
 		}
 
 		.texto-de-bloquin {
@@ -199,6 +212,7 @@
 				height: 70%;
 				border-bottom: solid;
 				border-bottom-color: #DDE1E7;
+				overflow: scroll;
 			}
 
 			.texto-de-fundo-bloquin {
@@ -213,6 +227,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				padding-top: 10%;
+
 			}
 
 		#primeiro-fundo-bloquin {
