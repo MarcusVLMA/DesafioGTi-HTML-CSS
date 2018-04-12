@@ -202,7 +202,7 @@
 			letter-spacing: 1px;
 		}
 
-		@media only screen and (max-width: 700px) {
+		@media only screen and (max-width: 1000px) {
 
 			.botao-de-bloquin {
 				text-align: center;
