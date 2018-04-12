@@ -202,6 +202,26 @@
 			letter-spacing: 1px;
 		}
 
+		@media only screen and (max-width: 540px) {
+			.botao-de-bloquin {
+			text-align: center;
+			font-family: "Montserrat", sans-serif;
+			font-weight: bold;
+			font-size: 80%;
+			border: solid;
+			background-color: #FF7F00;
+			border-radius: 13%;
+			color: white;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 5%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			letter-spacing: 1px;
+		}
+		}
+
+
 		.aBotao-de-bloquin {
 			text-decoration: none;
 			color: white;
