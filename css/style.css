@@ -203,22 +203,41 @@
 		}
 
 		@media only screen and (max-width: 700px) {
+
 			.botao-de-bloquin {
-			text-align: center;
-			font-family: "Montserrat", sans-serif;
-			font-weight: bold;
-			font-size: 80%;
-			border: solid;
-			background-color: #FF7F00;
-			border-radius: 13%;
-			color: white;
-			margin-left: 10%;
-			margin-right: 10%;
-			margin-top: 5%;
-			padding-top: 2%;
-			padding-bottom: 2%;
-			letter-spacing: 1px;
-		}
+				text-align: center;
+				font-family: "Montserrat", sans-serif;
+				font-weight: bold;
+				font-size: 50%;
+				border: solid;
+				background-color: #FF7F00;
+				border-radius: 13%;
+				color: white;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 5%;
+				padding-top: 2%;
+				padding-bottom: 2%;
+				letter-spacing: 1px;
+			}
+
+			.botao-de-bloquin2 {
+				text-align: center;
+				font-family: "Montserrat", sans-serif;
+				font-weight: bold;
+				font-size: 50%;
+				border: solid;
+				background-color: #A72D3A;
+				border-radius: 13%;
+				color: white;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 5%;
+				padding-top: 2%;
+				padding-bottom: 2%;
+				letter-spacing: 1px;
+			}
+
 		}
 
 
