@@ -7,7 +7,7 @@
 	width: 100vw;
 	height: 90vw;
 	background-image: url("../images/banner.jpg");
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	background-size: cover;
 	vertical-align: middle;
 }
