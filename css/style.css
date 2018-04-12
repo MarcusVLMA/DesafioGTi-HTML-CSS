@@ -122,7 +122,6 @@
 	background-color: white;
 	border-bottom: solid;
 	border-bottom-color: #DDE1E7;
-	padding-bottom: 7%;
 }
 	
 	#terceiro-bloco h1 {
@@ -140,7 +139,6 @@
 		width: 100vw;
 		height: 80vh;
 		margin: 0 auto;
-		overflow: scroll;
 	}
 
 		.bloquin {
@@ -158,6 +156,8 @@
 			font-size: 80%;
 			text-align: center;
 			margin-top: 8%;
+			max-width: 100%;
+			max-height: 100%;
 		}
 
 		.botao-de-bloquin {
@@ -220,6 +220,8 @@
 				margin-left: 10%;
 				color: white;
 				font-family: "Montserrat", sans-serif;
+				max-width: 100%;
+				max-height: 100%;
 			}
 
 			.img-de-fundo-bloquin {
@@ -227,7 +229,8 @@
 				margin-left: auto;
 				margin-right: auto;
 				padding-top: 10%;
-
+				max-width: 100%;
+				max-height: 100%;
 			}
 
 		#primeiro-fundo-bloquin {
