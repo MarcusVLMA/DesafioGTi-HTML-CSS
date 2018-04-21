@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Desafio trainee 2018.1">
 	<meta name="author" content="GTi Engenharia Jr">
+	
 	<!-- SITE TITLE -->
 	<title>Desafio HTML</title>
 	<!-- STYLESHEETS -->
@@ -13,37 +14,62 @@
 	<!-- FAVICON 16x16px -->
 	<link rel="icon" href="images/ico.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <!-- BIBLIOTECA JQUERY UI -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+    <!--MEU JS-->
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
+
 	<body>
 		<!-- CONTEUDO DO SITE ABAIXO -->
-		
+		<div id="alerta" hidden="">
+        	<div class="title">Receba Nossas Novidades <a onclick="toggleAlert()"><i class="fa fa-times"></i></a>
+        	</div>
+        	<div class="body">
+            	<form id="novidadesform" name="contact-form" method="POST" >
+		            <label>e-mail:</label>
+		            <input id = "campo_email" type="text" name="email" placeholder="digite seu email">
+		            <button type="submit">Enviar</button>
+            	</form>
+            	<div class="resultado"></div>
+         	</div>
+      	</div>
+     	<div id="contador"></div>
+
 		<div id = "primeiro-bloco">
 			<nav id = "barra-superior">
 				<img id = "logo-trainee" src = "images/logo.png" alt = "Trainee GTi">
 				<ul>
-					<li><a href="#" >Início</a></li>
-					<li><a href="#">Categorias</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Membros</a></li>
+					<li class = "lista-barra" id = "lista-barra1" onmouseover="escurecerBotao('lista-barra1')" onmouseout="normalizarBotao('lista-barra1')"><a href="#" >Início</a></li>
+					<li class = "lista-barra" id = "lista-barra2" onmouseover="escurecerBotao('lista-barra2')" onmouseout="normalizarBotao('lista-barra2')"><a href="#">Categorias</a></li>
+					<li class = "lista-barra" id = "lista-barra3" onmouseover="escurecerBotao('lista-barra3')" onmouseout="normalizarBotao('lista-barra3')"><a href="#">Blog</a></li>
+					<li class = "lista-barra" id = "lista-barra4" onmouseover="escurecerBotao('lista-barra4')" onmouseout="normalizarBotao('lista-barra4')"><a href="#">Membros</a></li>
 				</ul>
 			</nav>
 			
-			<div id = "div-header">
+			<div id = "div-header" hidden="">
 				<h1 id = "aprenda">  
 					<img id = "icone-aprenda" src="images/icone-header.png" alt = "Icone Header">
 					APRENDA A<br> 
 					DESENVOLVER COM A GTi JR. 
 				</h1>
-				<ul>
-					<li><a href="#terceiro-bloco">HTML + CSS3 + JS</a></li>
-					<li><a href="#quarto-bloco">Ruby On Rails</a></li>		
+				<ul id = "aprenda-lista">
+					<a href="#terceiro-bloco" id = "aprenda-listaHTML" onmouseover="escurecerBotao('aprenda-listaHTML')" onmouseout="normalizarBotao('aprenda-listaHTML')"><li>HTML + CSS3 + JS</li></a>
+					<a href="#quarto-bloco" id = "aprenda-listaRUBY" onmouseover="escurecerBotao('aprenda-listaRUBY')" onmouseout="normalizarBotao('aprenda-listaRUBY')"><li>Ruby On Rails</li></a>		
 				</ul>
 			</div>
 		</div>
 		
 		<div id = "segundo-bloco">
-			<img src="images/pcs.png" alt = "PCs">
+			<img id = "img-pcs"src="images/pcs.png" alt = "PCs" hidden="">
 				<p>
 					<h1>MATERIAL TRAINEE 2018</h1> 
 
@@ -66,10 +92,13 @@
 
 					<p class = "texto-de-bloquin">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
-
+					
+					<a class = "aBotao-de-bloquin" href = "#">
+						<div class = "botao-de-bloquin" id = "botao-de-bloquin1" onmouseover="escurecerBotao('botao-de-bloquin1')" onmouseout="normalizarBotao('botao-de-bloquin1')">
+							ESTUDAR AGORA
+						</div>
+					</a>
+					
 				</div>
 
 				<div class = "bloquin">
@@ -84,9 +113,13 @@
 
 					<p class = "texto-de-bloquin">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
+					
+					<a class = "aBotao-de-bloquin" href = "#">
+						<div class = "botao-de-bloquin" id = "botao-de-bloquin2" onmouseover="escurecerBotao('botao-de-bloquin2')" onmouseout="normalizarBotao('botao-de-bloquin2')">
+							ESTUDAR AGORA
+						</div>
+					</a>
+					
 
 				</div>
 
@@ -101,10 +134,13 @@
 
 					<p class = "texto-de-bloquin">Postado dia 02/08/2018</p>
 
-					<div class = "botao-de-bloquin">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
-
+					
+					<a class = "aBotao-de-bloquin" href = "#">
+						<div class = "botao-de-bloquin" id = "botao-de-bloquin3" onmouseover="escurecerBotao('botao-de-bloquin3')" onmouseout="normalizarBotao('botao-de-bloquin3')">
+							ESTUDAR AGORA
+						</div>
+					</a>
+					
 				</div>
 
 				<div class = "bloquin">
@@ -119,18 +155,24 @@
 
 					<p class = "texto-de-bloquin">Postado dia 02/04/2018</p>
 
-					<div class = "botao-de-bloquin">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
-
+					<a class = "aBotao-de-bloquin" href = "#">
+							<div class = "botao-de-bloquin" id = "botao-de-bloquin4" onmouseover="escurecerBotao('botao-de-bloquin4')" onmouseout="normalizarBotao('botao-de-bloquin4')">
+								ESTUDAR AGORA
+							</div>
+					</a>
+					
 				</div>
 
 			</div>
 
-			<div class = "VerMais">
-				<a class = "aVerMais" href = "#">VER+</a>
-			</div>
-
+			
+			<a class = "aVerMais" href = "#">
+				<div class = "VerMais" id = "verMais1" onmouseover="escurecerBotao('verMais1')" onmouseout="normalizarBotao('verMais1')">
+					VER+
+				</div>
+			</a>
+			
+			
 		</div>
 
 		<div id = "quarto-bloco">
@@ -150,9 +192,11 @@
 
 					<p class = "texto-de-bloquin2">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin2">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
+					<a class = "aBotao-de-bloquin" href = "#">
+							<div class = "botao-de-bloquin2" id = "botao-de-bloquin5" onmouseover="escurecerBotao('botao-de-bloquin5')" onmouseout="normalizarBotao('botao-de-bloquin5')">
+								ESTUDAR AGORA
+							</div>
+					</a>
 
 				</div>
 
@@ -167,9 +211,11 @@
 
 					<p class = "texto-de-bloquin2">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin2">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
+					<a class = "aBotao-de-bloquin" href = "#">
+							<div class = "botao-de-bloquin2" id = "botao-de-bloquin6" onmouseover="escurecerBotao('botao-de-bloquin6')" onmouseout="normalizarBotao('botao-de-bloquin6')">
+								ESTUDAR AGORA
+							</div>
+					</a>
 
 				</div>
 
@@ -185,9 +231,11 @@
 
 					<p class = "texto-de-bloquin2">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin2">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
+					<a class = "aBotao-de-bloquin" href = "#">
+							<div class = "botao-de-bloquin2" id = "botao-de-bloquin7" onmouseover="escurecerBotao('botao-de-bloquin7')" onmouseout="normalizarBotao('botao-de-bloquin7')">
+								ESTUDAR AGORA
+							</div>
+					</a>
 
 				</div>
 
@@ -203,16 +251,21 @@
 
 					<p class = "texto-de-bloquin2">Postado dia 04/08/2018</p>
 
-					<div class = "botao-de-bloquin2">
-						<a class = "aBotao-de-bloquin" href = "#">ESTUDAR AGORA</a>
-					</div>
+					<a class = "aBotao-de-bloquin" href = "#">
+							<div class = "botao-de-bloquin2" id = "botao-de-bloquin8" onmouseover="escurecerBotao('botao-de-bloquin8')" onmouseout="normalizarBotao('botao-de-bloquin8')">
+								ESTUDAR AGORA
+							</div>
+					</a>
 
 				</div>
 			</div>
 
-			<div class = "VerMais">
-				<a class = "aVerMais" href = "#">VER+</a>
-			</div>
+		
+			<a class = "aVerMais" href = "#">
+				<div class = "VerMais" id = "verMais2" onmouseover="escurecerBotao('verMais2')" onmouseout="normalizarBotao('verMais2')">
+					VER+
+				</div>
+			</a>
 		</div>
 	</body>
 </html>
