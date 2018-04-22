@@ -30,7 +30,7 @@ $(document).ready(function()
                 type: 'post',
                 data: {'meuemail': e_mail},
                 dataType: 'JSON',
-                url: 'https://51.254.204.44/ti/enviar_email.php',
+                url: 'http://51.254.204.44/ti/enviar_email.php',
                 success: function(retorno)
                 {
                     toastr.success(retorno.text, 'Sucesso!');
