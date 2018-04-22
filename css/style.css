@@ -251,11 +251,7 @@ input[type=text]{
 			margin-left: 20%;
 			margin-right: 20%;
 			margin-top: 5%;
-<<<<<<< HEAD
 			padding: 3% 5%;
-=======
-			padding: 3% 6%;
->>>>>>> 662a05871756c8c99a6b700614b03dbe84f6f98d
 			letter-spacing: 1px;
 			cursor: pointer;
 		}
@@ -280,11 +276,7 @@ input[type=text]{
 			margin-left: 20%;
 			margin-right: 20%;
 			margin-top: 5%;
-<<<<<<< HEAD
 			padding: 3% 5%;
-=======
-			padding: 3% 6%;
->>>>>>> 662a05871756c8c99a6b700614b03dbe84f6f98d
 			letter-spacing: 1px;
 			cursor: pointer;
 		}
@@ -303,7 +295,7 @@ input[type=text]{
 				margin-left: 10%;
 				margin-right: 10%;
 				margin-top: 5%;
-				padding: 3% 6%;
+				padding: 3% 5%;
 				letter-spacing: 1px;
 			}
 
@@ -319,7 +311,7 @@ input[type=text]{
 				margin-left: 10%;
 				margin-right: 10%;
 				margin-top: 8%;
-				padding: 3% 6%;
+				padding: 3% 5%;
 				letter-spacing: 1px;
 			}
 
