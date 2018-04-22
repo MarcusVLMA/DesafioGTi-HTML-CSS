@@ -128,3 +128,10 @@ function normalizarBotao(objeto)
 {
     $("#"+objeto).css("opacity", "");   
 }
+
+function irPara(objeto)
+{
+    $('html, body').animate({
+        scrollTop: $('#'+objeto).offset().top
+    }, 1000);
+}
